@@ -6,16 +6,16 @@ tic = time.perf_counter()
 #%% Functions
 
 def btnClick(num): #-> gets the pressed key
-    global operator #-> global variable
+    global operator
     operator = operator + str(num)
     text_Input.set(operator)
 
-def btnClearDisplay():
+def btnClearDisplay(): #-> clears display
     global operator
     operator = ''
     text_Input.set('')
 
-def btnEqualsInput():
+def btnEqualsInput(): #-> gets the operation val
     global operator
     sumup = str(eval(operator))
     text_Input.set(sumup)
