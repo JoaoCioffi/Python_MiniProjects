@@ -46,7 +46,8 @@ class PassGen:
                 break
             if events == 'Encrypt Password':
                 new_pw = self.generate_password(val)
-                print(new_pw)
+                print('Original Password -> ', val['pw'])
+                print('\nNew Password -> ', new_pw)
                 self.save_pw(new_pw, val)
 
     def generate_password(self,val):
@@ -59,9 +60,9 @@ class PassGen:
     def save_pw(self, new_pw, val):
         file_name = 'logfile.txt'
         with open(file_name,'a',newline='') as file:
-            file.write(f"Email/Username: {val['user_id']}, Password: {new_pw}")
+            file.write(f"Email/Username: {val['user_id']}\nOriginal Password: {val['pw']}\nEncrypted Password: {new_pw}")
         
-        print(f"File '{file_name}' saved successfully")
+        print(f"\nFile '{file_name}' saved successfully")
 
 #%% Functions Callback
 

@@ -1,1 +1,3 @@
-Email/Username: user_teste, Password: jiCKDEEmail/Username: user_teste, Password: v!F0As
+Email/Username: admin@admin
+Original Password: senhateste123
+Encrypted Password: %6qo5Hkt2%@PxuUWwxOxMDMHTV@z!a897hRiAi6aOVGtR
